@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AppserviceService } from '../appservice.service';
 import { headerMenu } from '../shared/utlis/type';
 
 @Component({
@@ -17,7 +18,7 @@ export class MainSiteComponent implements OnInit {
       link: '/main-site/page1',
     },
   ];
-  constructor() {}
+  constructor(public appservice: AppserviceService) {}
 
   ngOnInit(): void {}
 }

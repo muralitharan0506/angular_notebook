@@ -1,5 +1,10 @@
 <app-header [headerMenu]="headerMenu"></app-header>
-<!-- <p>demo</p> -->
-<router-outlet></router-outlet>
+<app-side-nav></app-side-nav>
+<div
+  class="content"
+  [ngClass]="{ sidenavclose_content: appservice.iscollapse }"
+>
+  <router-outlet></router-outlet>
+</div>
 
 <!-- <p>main-site works!</p> -->

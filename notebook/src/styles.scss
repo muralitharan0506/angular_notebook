@@ -75,4 +75,40 @@ body {
 }
 
 /* Importing Bootstrap SCSS file. */
-@import '~bootstrap/scss/bootstrap';
+
+// $theme-colors: (
+//   "primary": #a9a9a9,
+// );
+
+@import "~bootstrap/scss/bootstrap";
+
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 100px; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  // top: 0; /* Stay at the top */
+  left: 0;
+  background-color: $light; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  border: 2px solid red;
+}
+
+.sidenavclose {
+  border: 2px solid black;
+  width: 0px; /* 0 width - change this with JavaScript */
+}
+
+.sidenavclose_content {
+  margin-left: 0px !important ;
+  border: 2px solid black;
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+.content {
+  border: 2px solid green;
+  margin-left: 100px;
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}

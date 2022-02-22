@@ -94,4 +94,10 @@ export class AppserviceService {
     // Return an observable with a user-facing error message.
     return throwError(this.errmsg);
   }
+
+  iscollapse = false;
+  collapse() {
+    this.iscollapse = !this.iscollapse;
+    console.log('call service colla  ', this.iscollapse);
+  }
 }
